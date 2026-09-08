@@ -209,81 +209,86 @@ This file is generated from repository truth and bounded for the web channel. It
       "policy": "solution-admission-v1"
     },
     "aliases": [
-      "kimberling-18",
-      "Kimberling #18: Triangles with interlacing rows"
+      "kimberling-18"
     ],
     "allowed_axioms": [
-      "none"
+      "classical-mathematics",
+      "source-explicit-definitions-only"
     ],
     "assumptions": [
-      "No mathematical claim is admitted from the bounty title alone.",
-      "Source status and award status are observations, not mathematical Results."
+      "The source offers USD 50 subject to its publication or accepted-short-solution conditions.",
+      "Award amount, source status, repository state, and computational discovery are not mathematical Results."
     ],
     "constraints": {
       "allowed_adapters": [
-        "source-fidelity-review-v1"
+        "source-fidelity-review-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 262144,
-        "max_retries": 1,
-        "max_transitions": 20,
-        "timeout_seconds": 300
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-08T08:24:29Z",
+    "created_at": "2026-09-08T09:37:35Z",
     "definitions": [
       {
-        "definition": "The problem identified by the Project Problem Key and cited source URLs; not yet an admitted mathematical statement.",
-        "term": "draft bounty target"
+        "definition": "Definitions, initialization, asymptotic meaning, and computational model are those explicitly fixed by the cited source; unresolved ambiguity blocks Result admission.",
+        "term": "source-native interpretation"
       }
     ],
     "domain": {
-      "description": "Draft source-native bounty problem intake; exact mathematical domain remains subject to statement-faithfulness review.",
+      "description": "Source-defined mathematical or computational bounty target.",
       "objects": [
-        "objects explicitly named by the cited problem source"
+        "triangular array",
+        "interlacing rows",
+        "enumeration"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "05A15"
     ],
     "problem_id": "problem:kimberling-18",
     "quantifiers": [
       {
-        "domain": "an exact, source-faithful ProblemContract for the cited bounty problem",
-        "kind": "find",
-        "variables": [
-          "reviewed_problem_contract"
-        ]
+        "domain": "the exact source-defined target stated in this contract",
+        "kind": "decide",
+        "variables": []
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Bounty problem source",
+        "retrieved_at": "2026-09-08T09:37:35Z",
+        "source": "Official bounty problem and terms page",
         "source_record_id": "kimberling-18",
         "url": "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       },
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Vibe Mathing Project #2 bounty intake",
+        "retrieved_at": "2026-09-08T09:37:35Z",
+        "source": "Vibe Mathing Project #2 award record",
         "source_record_id": "kimberling-18",
         "url": "https://github.com/users/vibemathing/projects/2"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "Draft bounty intake target(s): Kimberling #18: Triangles with interlacing rows. The exact mathematical statement, quantifiers, definitions, assumptions, and acceptance conditions have not yet been frozen; this draft is not research-admitted.",
+      "text": "Determine, as a function of n, the number of arrangements of 1,2,…,n(n+1)/2 in a triangular array such that every entry a(i,j) lies strictly between a(i+1,j) and a(i+1,j+1).",
       "version": 1
     },
-    "title": "Kimberling #18: Triangles with interlacing rows",
-    "updated_at": "2026-09-08T08:24:29Z"
+    "title": "Kimberling #18: triangles with interlacing rows",
+    "updated_at": "2026-09-08T09:37:35Z"
   },
-  "problem_contract_sha256": "25b6ea514d4bbd6f1f78756fbee81646663384a2b59fc58869514afda0364e13"
+  "problem_contract_sha256": "e37945fc1bd3065d84393292b339c17a21f012d7df9afdef6cd263fed698e02e"
 }
 ```
